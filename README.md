@@ -1,4 +1,4 @@
-# CKF-Hearts`-Mod
+# CKF-Hearts-Mod
 ## Cyber Knights:Flashpoint Hearts Mod
 
 <picture>

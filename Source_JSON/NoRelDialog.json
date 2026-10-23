@@ -1,0 +1,210 @@
+{
+    "Metadata": {
+        "#": "Create New Relationship",
+        "StoryKey": "AhabHearts_NoRelTag",
+        "StartingId": 781020001
+    },
+    "StoryNode": [
+        {
+            "GroupId": "SN_AhabHearts_NoRelTag",
+            "Items": [
+                {
+                    "StoryNodeId": "SN_AhabHearts_NoRelTag",
+                    "ExpirationBlock": "B_AhabHearts_NoRelTag_Dialog",
+                    "ExpirationTurns": 1,
+                    "ExpirationRandom": 36
+                }
+            ]
+        }
+    ],
+    "StoryMatch": [
+        {
+            "GroupId": "Match_AhabHearts_NoRelTag",
+            "Items": [
+                {
+                    "Status": 1,
+                    "TagReq1": "JobMem_Combat",
+                    "TagNot1": "RelTag_SexyDislikes",
+                    "TagMatch": "Mem_AhabHearts_Actor", 
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "DebugName": "Hearts chatter, actor, no reltag"
+                },
+                {
+                    "Status": 1,
+                    "RelTarget": 1,
+                    "TagReq1": "JobMem_Combat",
+                    "TagMatch": "Mem_AhabHearts_Target",
+                    "Actor": "PCT_AhabHearts_Target",
+                    "DebugName": "Hearts chatter, target, no reltag"
+                }
+            ]
+        }
+    ],
+    "Block": [
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_Start",
+            "Items": [
+                {
+                    "Weight": 100,
+                    "PreState1": "NOT_TEMP_S_AhabHearts_Started",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Started",
+                    "StoryNode1": "ADD_SN_AhabHearts_NoRelTag",
+                    "EventId": "Match_AhabHearts_NoRelTag",
+                    "EventType": "ProcGenMission"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_Dialog",
+            "Items": [
+                {
+                    "StoryNodeId": "SN_AhabHearts_NoRelTag",
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "Side": "L",
+                    "StoryNode1": "DEL_SN_AhabHearts_NoRelTag",
+                    "EventId": "B_AhabHearts_NoRelTag_Choice1",
+                    "EventType": "Choice",
+                    "Text": "Hey, chummer!"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_Choice1",
+            "Items": [
+                {
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "Quip": "AhabHearts_Active",
+                    "Side": "L",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice1Active",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn1",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "Quip": "AhabHearts_Sexy",
+                    "Side": "L",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice1Active",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn1",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "Quip": "AhabHearts_Prof",
+                    "Side": "L",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice1Active",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn1",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "Quip": "AhabHearts_Words",
+                    "Side": "L",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice1Active",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn1",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "Quip": "AhabHearts_Owed",
+                    "Side": "L",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice1Active",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn1",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_TalkOn1",
+            "Items": [
+                {
+                    "Actor": "PCT_AhabHearts_Target",
+                    "Target": "PCT_AhabHearts_Actor",
+                    "Side": "R",
+                    "EventId": "B_AhabHearts_NoRelTag_Choice2",
+                    "EventType": "Choice",
+                    "Text": "Hey, yourself."
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_Choice2",
+            "Items": [
+                {
+                    "Actor": "PCT_AhabHearts_Target",
+                    "Target": "PCT_AhabHearts_Actor",
+                    "Quip": "AhabHearts_Accept",
+                    "Side": "R",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice2Accept",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn2",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Target",
+                    "Target": "PCT_AhabHearts_Actor",
+                    "Quip": "AhabHearts_Encourage",
+                    "Side": "R",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice2Encourage",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn2",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Target",
+                    "Target": "PCT_AhabHearts_Actor",
+                    "Quip": "AhabHearts_Divert",
+                    "Side": "R",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice2Divert",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn2",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Target",
+                    "Target": "PCT_AhabHearts_Actor",
+                    "Quip": "AhabHearts_Decline",
+                    "Side": "R",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice2Decline",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn2",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCT_AhabHearts_Target",
+                    "Target": "PCT_AhabHearts_Actor",
+                    "Quip": "AhabHearts_Reject",
+                    "Side": "R",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Choice2Reject",
+                    "EventId": "B_AhabHearts_NoRelTag_TalkOn2",
+                    "EventType": "TalkOn",
+                    "Text": "{11}"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_TalkOn2",
+            "Items": [
+                {
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Target": "PCT_AhabHearts_Target",
+                    "Side": "R",
+                    "PostState1": "DEL_TEMP_S_AhabHearts_Started",
+                    "EventType": "Choice",
+                    "Text": "So long, chummer."
+                }
+            ]
+        }
+    ]
+}

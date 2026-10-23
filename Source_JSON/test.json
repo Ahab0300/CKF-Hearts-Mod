@@ -1,0 +1,74 @@
+{
+    "Metadata": {
+        "#": "Create New Relationship",
+        "StoryKey": "AhabHearts_NoRelTag",
+        "StartingId": 781020001
+    },
+    "StoryNode": [
+        {
+            "GroupId": "SN_AhabHearts_NoRelTag",
+            "Items": [
+                {
+                    "StoryNodeId": "SN_AhabHearts_NoRelTag",
+                    "ExpirationBlock": "B_AhabHearts_NoRelTag_Dialog",
+                    "ExpirationTurns": 1,
+                    "ExpirationRandom": 36
+                }
+            ]
+        }
+    ],
+    "StoryMatch": [
+        {
+            "GroupId": "Match_AhabHearts_NoRelTag",
+            "Items": [
+                {
+                    "Status": 1,
+                    "TagReq1": "RelTag_Likes",
+                    "TagMatch": "Mem_AhabHearts_Actor",
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "DebugName": "Hearts chatter with no relationship"
+                }
+            ]
+        }
+    ],
+    "Tag": [
+        {
+            "TagClass": "Hidden",
+            "Hidden": "Yes",
+            "TagId": "Mem_AhabHearts_Actor"
+        },
+        {
+            "TagClass": "Hidden",
+            "Hidden": "Yes",
+            "TagId": "Mem_AhabHearts_Target"
+        }
+    ],
+    "Block": [
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_Start",
+            "Items": [
+                {
+                    "Weight": 100,
+                    "PreState1": "NOT_TEMP_S_AhabHearts_Started",
+                    "PostState1": "ADD_TEMP_S_AhabHearts_Started",
+                    "StoryNode1": "ADD_SN_AhabHearts_NoRelTag",
+                    "EventId": "Match_AhabHearts_NoRelTag",
+                    "EventType": "ProcGenMission"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabHearts_NoRelTag_Dialog",
+            "Items": [
+                {
+                    "StoryNodeId": "SN_AhabHearts_NoRelTag",
+                    "Actor": "PCT_AhabHearts_Actor",
+                    "Side": "L",
+                    "StoryNode1": "DEL_SN_AhabHearts_NoRelTag",
+                    "EventType": "Event",
+                    "Text": "Hey chummer!"
+                }
+            ]
+        }
+    ]
+}

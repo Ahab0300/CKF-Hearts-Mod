@@ -1,0 +1,69 @@
+{
+    "Metadata": {
+        "#": "New Relationship DialogQuips",
+        "StoryKey": "AhabHearts",
+        "StartingId": 781020001
+    },
+    "DialogQuip": [
+        {
+            "GroupId": "AhabHearts_Active",
+            "Items": [
+                {"Text": "Would you like to grab a beer with me?"}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Sexy",
+            "Items": [
+                {"Text": "Would you like to come to the Club with me?"}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Prof",
+            "Items": [
+                {"Text": "Would you like to join me at the shooting range?"}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Words",
+            "Items": [
+                {"Text": "Would you like to come watch the UNA News with me?"}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Owed",
+            "Items": [
+                {"Text": "I owe you for last week. Can I grab you something from the kitchen?"}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Accept",
+            "Items": [
+                {"Text": "All right."}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Encourage",
+            "Items": [
+                {"Text": "That sounds great! I'll see you there."}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Divert",
+            "Items": [
+                {"Text": "How about we get something from the refrigerator instead?"}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Decline",
+            "Items": [
+                {"Text": "Not right now. Maybe another time?"}
+            ]
+        },
+        {
+            "GroupId": "AhabHearts_Reject",
+            "Items": [
+                {"Text": "Can't you see I'm busy? Go away."}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,559 @@
+{
+    "Metadata": {
+		"#": "Legwork: Stakeout, a mission to observe a location",
+        "StoryKey": "AhabEspionage_Stakeout",
+		"StartingId": 781000201
+	},
+    "Legwork": [
+        {
+            "JsonId": 781000201,
+            "TagChance1": 80,
+            "TagChance2": 70,
+            "TagChance3": 55,
+            "TagChance4": 55,
+            "TagReq1": "Undercover",
+            "TagReq2": "Investigation",
+            "TagReq3": "Job_Stealth",
+            "TagReq4": "Burglary",
+            "TagMatch": "LegMem_AhabEspionage_LegStakeout",
+            "Actor": "PLG_AhabEspionage_LegStakeout",
+            "Target": "NCT_AhabEspionage_LegStakeout",
+            "StoryNodeId": "SN_AhabEspionage_LegStakeout_Legwork",
+            "SuccessType": "InfluenceAndFavor",
+            "FailType": "Heat20",
+            "ContactOwner": "NCT_AhabEspionage_LegStakeout",
+            "BlockSuccess": "B_AhabEspionage_LegStakeout_Win",
+            "BlockFail": "B_AhabEspionage_LegStakeout_Loss",
+            "Title": "Wait and Watch",
+            "Desc": "{1} needs someone watch a building for a few days. When the Stakeout is complete, {6} can decide how to proceed.",
+            "Win": "You quietly observe the target, recording what happens and who enters and leaves.",
+            "Fail": "You've been 'made' - guards are converging on your position. It's time to leave."
+        }
+    ],
+    "StoryNode": [
+        {
+            "GroupId": "SN_AhabEspionage_LegStakeout",
+            "Items": [
+                {
+                    "StoryNodeId": "SN_AhabEspionage_LegStakeout_Start",
+                    "ExpirationBlock": "B_AhabEspionage_LegStakeout_Start",
+                    "ExpirationTurns": 20,
+                    "ExpirationRandom": 16
+                },
+                {
+                    "StoryNodeId": "SN_AhabEspionage_LegStakeout_Delayed",
+                    "ExpirationBlock": "B_AhabEspionage_LegStakeout_DelayForce",
+                    "ExpirationTurns": 20,
+                    "ExpirationRandom": 16
+                },
+                {
+                    "StoryNodeId": "SN_AhabEspionage_LegStakeout_Legwork",
+                    "StoryNodeType": "Legwork",
+                    "Actor": "PLG_AhabEspionage_LegStakeout",
+                    "ExpirationTurns": 28,
+                    "Text": "{0} is conducting a stakeout of a building of interest."
+                },
+                {
+                    "StoryNodeId": "SN_AhabEspionage_LegStakeout_Cleanup",
+                    "ExpirationBlock": "B_AhabEspionage_LegStakeout_Cleanup",
+                    "ExpirationTurns": 2
+                },
+                {
+                    "StoryNodeId": "SN_AhabEspionage_LegStakeout_DelayRestart",
+                    "ExpirationBlock": "B_AhabEspionage_LegStakeout_DelayRestart",
+                    "ExpirationTurns": 84,
+                    "ExpirationRandom": 28
+                }
+            ]
+        }
+    ],
+    "StoryMatch": [
+        {
+            "GroupId": "Match_AhabEspionage_LegStakeout",
+            "Items": [
+                {
+                    "Status": 1,
+                    "PairRule": "OneOfMany",
+                    "TagReq1": "NCP_Meta_Espionage",
+                    "TagMatch": "Mem_AhabEspionage_LegStakeout",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "PostState": "SET_1_S_AhabEspionage_LegStakeout_Type",
+                    "DebugName": "stakeout for spy"
+                },
+                {
+                    "Status": 1,
+                    "PairRule": "OneOfMany",
+                    "TagReq1": "NPC_Detective",
+                    "TagMatch": "Mem_AhabEspionage_LegStakeout",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "PostState": "SET_2_S_AhabEspionage_LegStakeout_Type",
+                    "DebugName": "stakeout for detective"
+                },
+                {
+                    "Status": 1,
+                    "PairRule": "OneOfMany",
+                    "TagReq1": "Faction_StreetGang",
+                    "TagMatch": "Mem_AhabEspionage_LegStakeout",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "PostState": "SET_3_S_AhabEspionage_LegStakeout_Type",
+                    "DebugName": "stakeout for street gang"
+                },
+                {
+                    "Status": 1,
+                    "PairRule": "OneOfMany",
+                    "TagReq1": "Faction_Syndicates",
+                    "TagMatch": "Mem_AhabEspionage_LegStakeout",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "PostState": "SET_4_S_AhabEspionage_LegStakeout_Type",
+                    "DebugName": "stakeout for syndicate"
+                }
+            ]
+        }
+    ],
+    "Block": [
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout",
+            "Items": [
+                {
+                    "Weight": 100,
+                    "PreState1": "NOT_S_AhabEspionage_LegStakeout_DelayRestart",
+                    "PostState1": "ADD_S_AhabEspionage_LegStakeout_DelayRestart",
+                    "StoryNode1": "ADD_SN_AhabEspionage_LegStakeout_Start",
+                    "EventId": "Match_AhabEspionage_LegStakeout",
+                    "EventType": "ProcGenLegwork",
+                    "Text": "Proc-Legwork: Stakeout"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_Start",
+            "Items": [
+                {
+                    "StoryNodeId": "SN_AhabEspionage_LegStakeout_Start",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "StoryNode1": "DEL_SN_AhabEspionage_LegStakeout_Start",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Intro",
+                    "EventId": "B_AhabEspionage_LegStakeout_Choices",
+                    "EventType": "Choice",
+                    "Text": "I need a Stakeout on a building, <style=DialogTerm>Legwork</style> to keep watch on it for a while."
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_StartDelayed",
+            "Items": [
+                {
+                    "StoryNodeId": "SN_AhabEspionage_LegStakeout_Delayed",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "StoryNode1": "DEL_SN_AhabEspionage_LegStakeout_Delayed",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Intro",
+                    "EventId": "B_AhabEspionage_LegStakeout_Choices",
+                    "EventType": "Choice",
+                    "Text": "I can't wait forever. I need to nail this site down soon."
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_DelayForce",
+            "Items": [
+                {
+                    "PostState1": "ADD_S_AhabEspionage_LegStakeout_DelayForce",
+                    "StoryNode1": "DEL_SN_AhabEspionage_LegStakeout_Delayed",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Intro",
+                    "EventId": "B_AhabEspionage_LegStakeout_Choices",
+                    "EventType": "Choice"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_Choices",
+            "Items": [
+                {
+                    "Actor": "PCP_Knight",
+                    "PreState1": "NOT_S_AhabEspionage_LegStakeout_Chat1",
+                    "PostState1": "ADD_S_AhabEspionage_LegStakeout_Chat1",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Chat1",
+                    "EventId": "B_AhabEspionage_LegStakeout_Choices",
+                    "EventType": "Choice",
+                    "Text": "What do you think we will see? What are we looking for?"
+                },
+                {
+                    "Actor": "PCP_Knight",
+                    "PreState1": "NOT_S_AhabEspionage_LegStakeout_Chat2",
+                    "PostState1": "ADD_S_AhabEspionage_LegStakeout_Chat2",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Chat2",
+                    "EventId": "B_AhabEspionage_LegStakeout_Choices",
+                    "EventType": "Choice",
+                    "Text": "How long do you want the site watched?"
+                },
+                {
+                    "ChoiceMeta": "Legwork",
+                    "StoryNode1": "DEL_SN_AhabEspionage_LegStakeout_Delayed",
+                    "Dialog": "D_AhabEspionage_LegStakeout_LegStart",
+                    "EventId": "SN_AhabEspionage_LegStakeout_Legwork",
+                    "EventType": "Legwork",
+                    "Text": "We've got people who can keep a quiet stakeout. Where do we send them?"
+                },
+                {
+                    "Actor": "PCP_Knight",
+                    "Quip": "ProcLeg_Generic_Delay",
+                    "ChoiceMeta": "Delay",
+                    "PreState1": "NOT_S_AhabEspionage_LegStakeout_DelayForce",
+                    "StoryNode1": "ADD_SN_AhabEspionage_LegStakeout_Delayed",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Delayed",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PCP_Knight",
+                    "Target": "NCT_AhabEspionage_LegStakeout",
+                    "ChoiceMeta": "No",
+                    "StoryNode1": "ADD_SN_AhabEspionage_LegStakeout_Cleanup",
+                    "StoryNode2": "DEL_SN_AhabEspionage_LegStakeout_Delayed",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Reject",
+                    "Text": "I'm afraid we don't have anybody who can do a week-long stakeout right now."
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_Win",
+            "Items": [
+                {
+                    "StoryNode1": "ADD_SN_AhabEspionage_LegStakeout_Cleanup",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Win"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_Loss",
+            "Items": [
+                {
+                    "PostConditionGroup": "Post_AhabEspionage_LegStakeout_Loss",
+                    "StoryNode1": "ADD_SN_AhabEspionage_LegStakeout_Cleanup",
+                    "Dialog": "D_AhabEspionage_LegStakeout_Loss"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_Cleanup",
+            "Items": [
+                {
+                    "PostConditionGroup": "Post_AhabEspionage_LegStakeout_Cleanup",
+                    "PostState1": "DEL_S_AhabEspionage_LegStakeout_Chat1",
+                    "PostState2": "DEL_S_AhabEspionage_LegStakeout_Chat2",
+                    "StoryNode1": "ADD_SN_AhabEspionage_LegStakeout_DelayRestart"
+                }
+            ]
+        },
+        {
+            "GroupId": "B_AhabEspionage_LegStakeout_DelayRestart",
+            "Items": [
+                {"PostState1": "DEL_S_AhabEspionage_LegStakeout_DelayRestart"}
+            ]
+        }
+    ],
+    "BlockCondition": [
+        {
+            "GroupId": "Post_AhabEspionage_LegStakeout_Cleanup",
+            "Items": [
+                {
+                    "ConditionType": "TempStoryId",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "OptionId": -1
+                },
+                {
+                    "ConditionType": "Tag",
+                    "Actor": "PTG_LegMem_AhabEspionage_LegStakeout",
+                    "ConditionKey": "DEL_LegMem_AhabEspionage_LegStakeout"
+                }
+            ]
+        },
+        {
+            "GroupId": "Post_AhabEspionage_LegStakeout_Loss",
+            "Items": [
+                {
+                    "ConditionType": "ContactMeta",
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "ConditionValue": 1,
+                    "OptionId": 1
+                }
+            ]
+        }
+    ],
+    "Dialog": [
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_Intro",
+            "Items": [
+                {
+                    "Actor": "PCP_Knight",
+                    "Target": "NCT_AhabEspionage_LegStakeout",
+                    "Text": "Stakeouts are long and boring, {1}. What makes this building interesting?"
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_1_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "The target is a laboratory of some interest to us."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_2_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "We have detected some suspictious activity at the location."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_3_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "A rival gang is using it for a meeting space."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_4_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "Someone is smuggling materials through a warehouse without our permission and I would like to know who it is."
+                },
+                {
+                    "Actor": "PCP_Face",
+                    "Side": "R",
+                    "Text": "What would you like us to do?"
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_1_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "Keep track of who is going in and out, and the deliveries to and from the lab."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_2_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "If anyone goes in there, we want to know."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_3_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "Figure out when they are meeting, and who is attending."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_4_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "Look for any suspicious shipments out of the warehouse."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "Set up an observation post. Keep watch on the building. Write down everything that happens there."
+                }
+            ]
+        },
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_LegStart",
+            "Items": [
+                {
+                    "Actor": "PLG_AhabEspionage_LegStakeout",
+                    "Quip": "ProcLeg_AhabEspionage_LegStakeout_Start",
+                    "Side": "R",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "Just watch the building and pay attention."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "Remember this has to be covert. Set up your observation post carefully so they won't see you."
+                }
+            ]
+        },
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_Chat1",
+            "Items": [
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_1_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "If we know who is working there, we can figure out what they are working on."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_2_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "It's probably just a hideout for some Gray Card criminals, but it could be something more."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_3_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "They seem to meet there regularly but I don't know whether it is high-level or low-level people."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_4_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "I don't know who is doing the smuggling. Pinning down the shipments will help me figure it out."
+                }
+            ]
+        },
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_Chat2",
+            "Items": [
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "A week should be enough to get the information I need."
+                },
+                {
+                    "Actor": "PCP_Face",
+                    "Side": "R",
+                    "Text": "A week sitting in one place watching a building. What if we are 'made' and they notice our observation?"
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "Have a good escape route. They'll probably send a squad of guards after you."
+                }
+            ]
+        },
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_Delayed",
+            "Items": [
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Target": "PCP_Knight",
+                    "Side": "R",
+                    "Quip": "ProcLeg_Generic_DelayDialog",
+                    "Text": "{11}"
+                }
+            ]
+        },
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_Reject",
+            "Items": [
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Target": "PCP_Knight",
+                    "Side": "R",
+                    "Quip": "ProcLeg_Generic_RejectDialog",
+                    "Text": "{11}"
+                }
+            ]
+        },
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_Win",
+            "Items": [
+                {
+                    "Actor": "PTG_LegMem_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "I found a good observation post and spent a nice quiet week watching the place."
+                },
+                {
+                    "Actor": "PTG_LegMem_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "There were lots of people in and out regularly."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_1_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "Interesting list of researchers you have here. Thank you."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_2_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "We'll use this to make a small raid and clear the place out."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_3_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "It's good to keep tabs on the other gangs."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "PreState1": "EQL_4_S_AhabEspionage_LegStakeout_Type",
+                    "Text": "Several interesting shipments, I see. I will follow up on these clues."
+                },
+                {
+                    "Actor": "NAR_",
+                    "Target": "NCT_AhabEspionage_LegStakeout",
+                    "Quip": "Generic_Legwork_InfluenceAndFavor",
+                    "Text": "{11}"
+                }
+            ]
+        },
+        {
+            "GroupId": "D_AhabEspionage_LegStakeout_Loss",
+            "Items": [
+                {
+                    "Actor": "PCP_Face",
+                    "Side": "R",
+                    "Target": "PTG_LegMem_AhabEspionage_LegStakeout",
+                    "Text": "{1} is back in a rush. You should come talk to {4}."
+                },
+                {
+                    "Actor": "PCP_Knight",
+                    "Text": "What happened out on the stakeout?"
+                },
+                {
+                    "Actor": "PTG_LegMem_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Quip": "ProcLeg_AhabEspionage_LegStakeout_Loss1",
+                    "Text": "{11}"
+                },
+                {
+                    "Actor": "PTG_LegMem_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "I barely got away before they swarmed the place."
+                },
+                {
+                    "Actor": "NCT_AhabEspionage_LegStakeout",
+                    "Side": "R",
+                    "Text": "I told you to be careful! This will make things harder - the Heat is on."
+                },
+                {
+                    "Actor": "NAR_",
+                    "Target": "PTG_LegMem_AhabEspionage_LegStakeout",
+                    "Text": "We have gained <style=DialogTerm>+20% Heat</style> for failing this <style=DialogTerm>Legwork</style>."
+                }
+            ]
+        }
+    ],
+    "DialogQuip": [
+        {
+            "GroupId": "ProcLeg_AhabEspionage_LegStakeout_Start",
+            "Items": [
+                {"Text": "A stakeout? I see a lot of takeout food in my future."},
+                {"Text": "All I have to do is sit around for a week? Vacation"},
+                {"Text": "I hate just sitting on stakeout all day."},
+                {"Tag": "Trait_Thief", "Text": "This reminds me of my thieving days."},
+                {"Tag": "Trait_Sleuth", "Text": "It's been a long time since I did a stakeout."}
+            ]
+        },
+        {
+            "GroupId": "ProcLeg_AhabEspionage_LegStakeout_Loss1",
+            "Items": [
+                {"Text": "I'm not sure how they spotted me. The operation was going quietly when suddenly guards were everywhere."},
+                {"Text": "They were on alert the entire time I was there. I tried several times to find an observation post but had to abandon them all."},
+                {"Text": "My observation post was great. It had a perfect view of the site. Which is why they posted a sniper on the roof above me shortly after I arrived."}
+            ]
+        }
+    ],
+    "Tag": [
+        {
+            "TagClass": "Hidden",
+            "TagId": "Mem_AhabEspionage_LegStakeout"
+        },
+        {
+            "TagClass": "Hidden",
+            "TagId": "LegMem_AhabEspionage_LegStakeout"
+        }
+    ]
+}

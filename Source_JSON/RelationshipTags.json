@@ -1,0 +1,234 @@
+{
+    "Metadata": {
+        "#": "New Relationship Tags",
+        "StoryKey": "AhabHearts",
+        "StartingId": 781020001
+    },
+    "Tag": [
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_BestFriend",
+            "ExtraTag": "RelTag_ActiveLikes",
+            "Name": "Best Friend"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 1,
+            "TagId": "RelTag_AhabHearts_Flirting",
+            "ExtraTag": "RelTag_SexyLikes",
+            "Name": "Flirting"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_ExSpouseGood",
+            "ExtraTag": "RelTag_SexyLikes",
+            "Name": "Divorced, Good Terms"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 3,
+            "TagId": "RelTag_AhabHearts_Fixated",
+            "ExtraTag": "RelTag_SexyLikes",
+            "Name": "Fixated"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 1,
+            "TagId": "RelTag_AhabHearts_Appreciates",
+            "ExtraTag": "RelTag_ProfLikes",
+            "Name": "Appreciates"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 3,
+            "TagId": "RelTag_AhabHearts_Reveres",
+            "ExtraTag": "RelTag_ProfLikes",
+            "Name": "Reveres"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 1,
+            "TagId": "RelTag_AhabHearts_Supports",
+            "ExtraTag": "RelTag_WordsLikes",
+            "Name": "Supports"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_Advocates",
+            "ExtraTag": "RelTag_WordsLikes",
+            "Name": "Advocates"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 3,
+            "TagId": "RelTag_AhabHearts_Sponsors",
+            "ExtraTag": "RelTag_WordsLikes",
+            "Name": "Sponsors"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_Beholden",
+            "ExtraTag": "RelTag_OwedLikes",
+            "Name": "Beholden"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": 1,
+            "TagScore": 3,
+            "TagId": "RelTag_AhabHearts_Bound",
+            "ExtraTag": "RelTag_OwedLikes",
+            "Name": "Bound"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 1,
+            "TagId": "RelTag_AhabHearts_Rejected",
+            "ExtraTag": "RelTag_SexyDislikes",
+            "Name": "Rejected"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_Jealous",
+            "ExtraTag": "RelTag_SexyDislikes",
+            "Name": "Jealous"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_Jilted",
+            "ExtraTag": "RelTag_SexyDislikes",
+            "Name": "Jilted"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_SpouseBad",
+            "ExtraTag": "RelTag_SexyDislikes",
+            "Name": "Married, Bad Terms"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 3,
+            "TagId": "RelTag_AhabHearts_Obsessed",
+            "ExtraTag": "RelTag_SexyDislikes",
+            "Name": "Obsessed"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 2,
+            "TagId": "RelTag_AhabHearts_Disrespects",
+            "ExtraTag": "RelTag_ProfDislikes",
+            "Name": "Disrespects"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 3,
+            "TagId": "RelTag_AhabHearts_Condemns",
+            "ExtraTag": "RelTag_ProfDislikes",
+            "Name": "Condemns"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 1,
+            "TagId": "RelTag_AhabHearts_Grievance",
+            "ExtraTag": "RelTag_OwedDislikes",
+            "Name": "Grievance"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "RelType": -1,
+            "TagScore": 2,
+            "TagId": "RelTag_Resents",
+            "ExtraTag": "RelTag_OwedDislikes",
+            "Name": "Resents"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former Relation Meta Tag"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerLover",
+            "ExtraTag": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former Lover"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerExLover",
+            "ExtraTag": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former Ex-Lover"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerJilted",
+            "ExtraTag": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former Jilted"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerSpouse",
+            "ExtraTag": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former Spouse"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerSpouseBad",
+            "ExtraTag": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former SpouseBad"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerExSpouse",
+            "ExtraTag": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former Ex-Spouse"
+        },
+        {
+            "TagClass": "PersonalRel",
+            "Hidden": "Yes",
+            "TagId": "RelTag_AhabHearts_FormerExSpouseGood",
+            "ExtraTag": "RelTag_AhabHearts_FormerRomantic",
+            "Name": "Former ExSpouseGood"
+        },
+        {
+            "TagClass": "Hidden",
+            "Hidden": "Yes",
+            "TagId": "Mem_AhabHearts_Actor"
+        },
+        {
+            "TagClass": "Hidden",
+            "Hidden": "Yes",
+            "TagId": "Mem_AhabHearts_Target"
+        }
+    ]
+}

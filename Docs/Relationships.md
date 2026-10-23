@@ -4,7 +4,7 @@
 - [Heart Stories](HeartStories.md)
 - [Roadmap](Roadmap.md)
 
-#Relationships
+# Relationships
 **Hearts Mod** relies entirely on Relationship Tags. The base game supplies 47
 relationships, and this mod adds 21 more relationships to flesh out the system.
 
@@ -43,7 +43,7 @@ Relationships in *italics* come from the base game. Relationships in **bold**
 are added by **Hearts Mod**.
 
 | Polarity | Category     | Degree | Basic         | Sexual       | Unused        |
-|----------|--------------|--------|---------------|--------------|---------------|
+| -------- | ------------ | ------ | ------------- | ------------ | ------------- |
 | Likes    | Personal     |   1    | *Friend*      |              | *Protective*  |
 | Likes    | Personal     |   2    | **BestFriend** |             |               |
 | Likes    | Personal     |   3    | *Follows*     |              | *Parent, Sibling, Child* |

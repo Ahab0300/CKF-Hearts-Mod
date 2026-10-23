@@ -4,7 +4,7 @@
 - [Heart Stories](HeartStories.md)
 - [Roadmap](Roadmap.md)
 
-#Evolution of Relationships
+# Evolution of Relationships
 ## Basic Relationships
 
 Basic Relationships can change into other Basic Relationships through
@@ -39,7 +39,7 @@ SpouseBad, an ExSpouse, or an ExSpouseGood.
 <summary>Sexual Relationship Evolution</summary>
 
 | Relationship | Polarity | Can Change To                             |
-|--------------|----------|-------------------------------------------|
+| ------------ | -------- | ----------------------------------------- |
 | Attracted    | Likes    | Lover, Spouse                             |
 | Lover        | Likes    | ExLover, Jilted, Spouse, Misses           |
 | ExLover      | Likes    | Lover, Spouse, Misses                     |

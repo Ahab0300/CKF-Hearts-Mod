@@ -42,6 +42,7 @@ Unused Relationships (Relationships in the base game which are not used in
 Relationships in *italics* come from the base game. Relationships in **bold**
 are added by **Hearts Mod**.
 
+
 | Polarity | Category     | Degree | Basic         | Sexual       | Unused        |
 | -------- | ------------ | ------ | ------------- | ------------ | ------------- |
 | Likes    | Personal     |   1    | *Friend*      |              | *Protective*  |
@@ -74,6 +75,7 @@ are added by **Hearts Mod**.
 | Dislikes | Debt         |   1    | **Grievance** |              |               |
 | Dislikes | Debt         |   2    | **Resents**   |              | *StoleFrom*   |
 | Dislikes | Debt         |   3    | *Grudge*      |              | *Betrayed, Revenge, Wronged* |
+
 
 </details>
 

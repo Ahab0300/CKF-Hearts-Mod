@@ -18,5 +18,5 @@ We would like to thank the following people who have provided comments and ideas
 - Carmona
 - davefghi
 - Earthseaknight
-- Mortimer de la Vigo
 - Uncle B
+- and especially Mortimer de la Vigo, who planned to be a co-developer but had to withdraw

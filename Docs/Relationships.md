@@ -44,36 +44,36 @@ are added by **Hearts Mod**.
 
 <table>
 <tr><th>Polarity</th><th>Category</th><th>Degree</th><th>Basic</th><th>Sexual</th><th>Unused</th></tr>
-<tr><td>Likes</td><td>Personal</td><td>1</td><td>*Friend*</td><td></td><td>*Protective*</td></tr>
-<tr><td>Likes</td><td>Personal</td><td>2</td><td>**BestFriend**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Personal</td><td>3</td><td>*Follows*</td><td></td><td>*Parent, Sibling, Child*</td></tr>
-<tr><td>Likes</td><td>Romantic</td><td>1</td><td>**Flirting**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Romantic</td><td>2</td><td>*Attracted*</td><td>*ExLover, Lover, Misses, Spouse,* **ExSpouseGood**</td><td></td></tr>
-<tr><td>Likes</td><td>Romantic</td><td>3</td><td>**Fixated**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Professional</td><td>1</td><td>**Appreciates**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Professional</td><td>2</td><td>*Respects, Trusts*</td><td></td><td>*Partnered*</td></tr>
-<tr><td>Likes</td><td>Professional</td><td>3</td><td>**Reveres**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Judgment</td><td>1</td><td>**Commends**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Judgment</td><td>2</td><td>**Acclaims**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Judgment</td><td>3</td><td>**Glorifies**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Debt</td><td>1</td><td>*Owed*</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Debt</td><td>2</td><td>**Beholden**</td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Debt</td><td>3</td><td>**Bound**</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Personal</td><td>1</td><td>*Enemy*</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Personal</td><td>2</td><td>*Rival*</td><td></td><td>*Incriminate*</td></tr>
-<tr><td>Dislikes</td><td>Personal</td><td>3</td><td>*Hates*</td><td></td><td>*Hunting, ParentBad, SiblingBad, ChildBad*</td></tr>
-<tr><td>Dislikes</td><td>Romantic</td><td>1</td><td>**Rejected**</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Romantic</td><td>2</td><td>**Jealous**</td><td>**Jilted, SpouseBad**</td><td></td></tr>
-<tr><td>Dislikes</td><td>Romantic</td><td>3</td><td>**Obsesses**</td><td>*ExSpouse*</td><td></td></tr>
-<tr><td>Dislikes</td><td>Professional</td><td>1</td><td>*Distrust*</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Professional</td><td>2</td><td>**Disrespects**</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Professional</td><td>3</td><td>**Condemns**</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Judgment</td><td>1</td><td>*Contempt*</td><td></td><td>*Suspicious*</td></tr>
-<tr><td>Dislikes</td><td>Judgment</td><td>2</td><td>*Disdain*</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Judgment</td><td>3</td><td>**Scorn**</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Debt</td><td>1</td><td>**Grievance**</td><td></td><td></td></tr>
-<tr><td>Dislikes</td><td>Debt</td><td>2</td><td>**Resents**</td><td></td><td>*StoleFrom*</td></tr>
-<tr><td>Dislikes</td><td>Debt</td><td>3</td><td>*Grudge*</td><td></td><td>*Betrayed, Revenge, Wronged*</td></tr>
+<tr><td>Likes</td><td>Personal</td><td>1</td><td><i>Friend</i></td><td></td><td><i>Protective</i></td></tr>
+<tr><td>Likes</td><td>Personal</td><td>2</td><td><b>BestFriend</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Personal</td><td>3</td><td><i>Follows</i></td><td></td><td><i>Parent, Sibling, Child</i></td></tr>
+<tr><td>Likes</td><td>Romantic</td><td>1</td><td><b>Flirting</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Romantic</td><td>2</td><td><i>Attracted</i></td><td><i>ExLover, Lover, Misses, Spouse,* <b>ExSpouseGood</b></td><td></td></tr>
+<tr><td>Likes</td><td>Romantic</td><td>3</td><td><b>Fixated</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Professional</td><td>1</td><td><b>Appreciates</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Professional</td><td>2</td><td><i>Respects</i></td><td></td><td><i>Partnered, Trusts</i></td></tr>
+<tr><td>Likes</td><td>Professional</td><td>3</td><td><b>Reveres</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Judgment</td><td>1</td><td><b>Commends</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Judgment</td><td>2</td><td><b>Acclaims</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Judgment</td><td>3</td><td><b>Glorifies</b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Debt</td><td>1</td><td><i>Owed</i></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Debt</td><td>2</td><td><b>Beholden<b></td><td></td><td></td></tr>
+<tr><td>Likes</td><td>Debt</td><td>3</td><td><b>Bound</b></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Personal</td><td>1</td><td><i>Enemy</i></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Personal</td><td>2</td><td><i>Rival</i></td><td></td><td><i>Incriminate</i></td></tr>
+<tr><td>Dislikes</td><td>Personal</td><td>3</td><td><i>Hates</i></td><td></td><td><i>Hunting, ParentBad, SiblingBad, ChildBad</i></td></tr>
+<tr><td>Dislikes</td><td>Romantic</td><td>1</td><td><b>Rejected</b></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Romantic</td><td>2</td><td><b>Jealous</b></td><td><b>Jilted, SpouseBad</b></td><td></td></tr>
+<tr><td>Dislikes</td><td>Romantic</td><td>3</td><td><b>Obsesses</b></td><td><i>ExSpouse</i></td><td></td></tr>
+<tr><td>Dislikes</td><td>Professional</td><td>1</td><td><i>Distrust</i></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Professional</td><td>2</td><td><b>Disrespects</b></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Professional</td><td>3</td><td><b>Condemns</b></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Judgment</td><td>1</td><td><i>Contempt</i></td><td></td><td><i>Suspicious</i></td></tr>
+<tr><td>Dislikes</td><td>Judgment</td><td>2</td><td><i>Disdain</i></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Judgment</td><td>3</td><td><b>Scorn</b></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Debt</td><td>1</td><td><b>Grievance</b></td><td></td><td></td></tr>
+<tr><td>Dislikes</td><td>Debt</td><td>2</td><td><b>Resents</b></td><td></td><td><i>StoleFrom</i></td></tr>
+<tr><td>Dislikes</td><td>Debt</td><td>3</td><td><i>Grudge</i></td><td></td><td><i>Betrayed, Revenge, Wronged</i></td></tr>
 </table>
 
 </details>

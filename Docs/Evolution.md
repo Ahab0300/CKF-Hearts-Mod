@@ -38,17 +38,18 @@ SpouseBad, an ExSpouse, or an ExSpouseGood.
 
 <summary>Sexual Relationship Evolution</summary>
 
-| Relationship | Polarity | Can Change To                             |
-| ------------ | -------- | ----------------------------------------- |
-| Attracted    | Likes    | Lover, Spouse                             |
-| Lover        | Likes    | ExLover, Jilted, Spouse, Misses           |
-| ExLover      | Likes    | Lover, Spouse, Misses                     |
-| Jilted       | Dislikes | ExLover, Lover, Misses                    |
-| Spouse       | Likes    | SpouseBad, ExSpouse, ExSpouseGood, Misses |
-| SpouseBad    | Dislikes | Spouse, ExSpouse, ExpouseGood, Misses     |
-| ExSpouse     | Dislikes | ExSpouseGood, Spouse, Misses              |
-| ExSpouseGood | Likes    | ExSpouseBad, Spouse, Misses               |
-| Misses       | Likes    | nothing, previous relationship            |
+<table>
+<tr><th>Relationship</th><th>Polarity</th><th>Can Change To</th></tr>
+<tr><td>Attracted</td><td>Likes</td><td>Lover, Spouse</td></tr>
+<tr><td>Lover</td><td>Likes</td><td>ExLover, Jilted, Spouse, Misses</td></tr>
+<tr><td>ExLover</td><td>Likes</td><td>Lover, Spouse, Misses</td></tr>
+<tr><td>Jilted</td><td>Dislikes</td><td>ExLover, Lover, Misses</td></tr>
+<tr><td>Spouse</td><td>Likes</td><td>SpouseBad, ExSpouse, ExSpouseGood, Misses</td></tr>
+<tr><td>SpouseBad</td><td>Dislikes</td><td>Spouse, ExSpouse, ExpouseGood, Misses</td></tr>
+<tr><td>ExSpouse</td><td>Dislikes</td><td>ExSpouseGood, Spouse, Misses</td></tr>
+<tr><td>ExSpouseGood</td><td>Likes</td><td>ExSpouseBad, Spouse, Misses</td></tr>
+<tr><td>Misses</td><td>Likes</td><td>nothing, previous relationship</td></tr>
+</table>
 
 </details>
 

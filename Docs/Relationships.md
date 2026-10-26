@@ -48,7 +48,7 @@ are added by **Hearts Mod**.
 <tr><td>Likes</td><td>Personal</td><td>2</td><td><b>BestFriend</b></td><td></td><td></td></tr>
 <tr><td>Likes</td><td>Personal</td><td>3</td><td><i>Follows</i></td><td></td><td><i>Parent, Sibling, Child</i></td></tr>
 <tr><td>Likes</td><td>Romantic</td><td>1</td><td><b>Flirting</b></td><td></td><td></td></tr>
-<tr><td>Likes</td><td>Romantic</td><td>2</td><td><i>Attracted</i></td><td><i>ExLover, Lover, Misses, Spouse,* <b>ExSpouseGood</b></td><td></td></tr>
+<tr><td>Likes</td><td>Romantic</td><td>2</td><td><i>Attracted</i></td><td><i>ExLover, Lover, Misses, Spouse,</i> <b>ExSpouseGood</b></td><td></td></tr>
 <tr><td>Likes</td><td>Romantic</td><td>3</td><td><b>Fixated</b></td><td></td><td></td></tr>
 <tr><td>Likes</td><td>Professional</td><td>1</td><td><b>Appreciates</b></td><td></td><td></td></tr>
 <tr><td>Likes</td><td>Professional</td><td>2</td><td><i>Respects</i></td><td></td><td><i>Partnered, Trusts</i></td></tr>
